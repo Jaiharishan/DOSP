@@ -56,7 +56,13 @@ actor Calculator
   new create(env: Env, n: USize, k: USize) =>
     _env = env
     _total = n
-    _chunk_size = Math.ceil(Math.sqrt(_total)) // Adjust this based on your system and problem size
+    // _chunk_size = Math.ceil(Math.sqrt(_total)) // Adjust this based on your system and problem size
+    // _chunk_size = get_chunk_size(n)
+    if n <= 1000 then _chunk_size = n 
+    else 
+      _chunk_size = Math.ceil(Math.sqrt(n))
+    end
+
     _summers = Array[Summer]
 
     let num_summers = ((n - 1) / _chunk_size) + 1
@@ -71,6 +77,12 @@ actor Calculator
         _summers(i)?.calculate_chunk(start, endp)
       end
     end
+
+  // fun ref get_chunk_size(m: USize): USize =>
+  //   if m <= 1000 then return m.usize() 
+  //   else 
+  //     return Math.ceil(Math.sqrt(m))
+  //   end
 
 actor Summer
   let _env: Env
