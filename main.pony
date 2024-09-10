@@ -8,7 +8,9 @@
 
 // Cores used = (user time + sys time) / real time
 
-// /usr/bin/time ./DOSP 10000000 3
+// /usr/bin/time ./DOSP 10000000 3 - macOS
+
+// .\measure_time.ps1 -ProgramPath ".\DOSP.exe" -Arguments "arg1 arg2" - Windows powershell
 
 use "collections"
 use "math"
@@ -58,7 +60,8 @@ actor Calculator
     _total = n
     // _chunk_size = Math.ceil(Math.sqrt(_total)) // Adjust this based on your system and problem size
     // _chunk_size = get_chunk_size(n)
-    if n <= 1000 then _chunk_size = n 
+    if n <= 1000 then
+      _chunk_size = n
     else 
       _chunk_size = Math.ceil(Math.sqrt(n))
     end
