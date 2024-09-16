@@ -1,4 +1,4 @@
-# Pony Programme README
+# Lucas Square Pyramid
 
 ## Optimal Work Unit Size
 
@@ -13,14 +13,13 @@ No result
 ## Performance Metrics
 
 We ran the program using the command:
-For macOS - /usr/bin/time ./DOSP 1000000 4
-For Windows Powershell - .\measure_time.ps1 -ProgramPath ".\DOSP.exe" -Arguments "1000000 4"
+- For macOS - /usr/bin/time ./DOSP 1000000 4
+- For Windows Powershell - .\measure_time.ps1 -ProgramPath ".\DOSP.exe" -Arguments "1000000 4"
 
 The results were:
-
 - Real time: 0.03 seconds
 - User time: 0.21 seconds
-- Sys time:  0.01 seconds
+- Sys time : 0.01 seconds
 
 The ratio of CPU time (User + Sys) to Real time is 0.22 seconds. This ratio indicates that our implementation effectively utilized 7.34 ~ approx 7 cores for parallel computation.
 
