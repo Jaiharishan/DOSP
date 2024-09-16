@@ -4,7 +4,7 @@
 
 The optimal work unit size for our implementation is 1000 when n≤1000; otherwise, it is the square root of 𝑛 workers per sub-problem request. We determined this optimal size through trial and error, testing various large and small values of 𝑛.
 
-## Results for lukas 1000000 4
+## Results for lucas 1000000 4
 
 The result of running our program with the inputs `1000000 4` is:
 
