@@ -1,5 +1,9 @@
 # Lucas Square Pyramid
 
+## Team members
+Jaiharishan Arunagiri Veerakumar - 62333614
+Vishal Karthikeyan Setti - 47670880
+
 ## Optimal Work Unit Size
 
 The optimal work unit size for our implementation is 1000 when n≤1000; otherwise, it is the square root of 𝑛 workers per sub-problem request. We determined this optimal size through trial and error, testing various large and small values of 𝑛.
