@@ -1,8 +1,8 @@
 # Lucas Square Pyramid
 
 ## Team members
-Jaiharishan Arunagiri Veerakumar - 62333614
-Vishal Karthikeyan Setti - 47670880
+- Jaiharishan Arunagiri Veerakumar - 62333614
+- Vishal Karthikeyan Setti - 47670880
 
 ## Optimal Work Unit Size
 
