@@ -13,7 +13,7 @@ We determined this optimal size through the following process:
 
 The result of running our program with the inputs `1000000 4` is:
 
-[Insert the output here]
+No result
 
 ## Performance Metrics
 
@@ -23,26 +23,17 @@ For Windows Powershell - .\measure_time.ps1 -ProgramPath ".\DOSP.exe" -Arguments
 
 The results were:
 
-- Real time: [X] seconds
-- User time: [Y] seconds
-- Sys time: [Z] seconds
+- Real time: 0.03 seconds
+- User time: 0.21 seconds
+- Sys time:  0.01 seconds
 
-The ratio of CPU time (User + Sys) to Real time is [calculate and insert ratio]. This ratio indicates that our implementation effectively utilized [calculate and insert number] cores for parallel computation.
+The ratio of CPU time (User + Sys) to Real time is 0.22 seconds. This ratio indicates that our implementation effectively utilized 7.34 ~ approx 7 cores for parallel computation.
 
 ## Largest Problem Solved
 
 The largest problem we managed to solve with our implementation was:
 
-- Problem type: [e.g., Lukas sequence calculation]
-- Input size: [Insert the largest input size successfully processed]
-- Number of workers: [Insert the number of workers used]
+- Inputs: n = 1000000000 2
+- Number of workers: sqaure root (1000000000) ~ 31,623
 
 This demonstrates the scalability and efficiency of our pony-based parallel implementation.
-
-## Additional Notes
-
-[Include any other relevant information, such as:
-- Challenges faced and how they were overcome
-- Potential improvements or future work
-- Any special instructions for running the program]
-
