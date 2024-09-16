@@ -2,12 +2,7 @@
 
 ## Optimal Work Unit Size
 
-The size of the work unit that resulted in the best performance for our implementation is [X] sub-problems per worker request.
-
-We determined this optimal size through the following process:
-1. [Explain your methodology for testing different work unit sizes]
-2. [Describe how you measured and compared performance]
-3. [Mention any trade-offs considered]
+The optimal work unit size for our implementation is 1000 when n≤1000; otherwise, it is the square root of 𝑛 workers per sub-problem request. We determined this optimal size through trial and error, testing various large and small values of 𝑛.
 
 ## Results for lukas 1000000 4
 
